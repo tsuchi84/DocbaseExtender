@@ -1,0 +1,27 @@
+{
+  "manifest_version": 2,
+  "name": "DocbaseExtender",
+  "version": "0.3.0",
+  "description": "Docbaseを少しだけ使いやすくする拡張機能です（非公式）",
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_icon": "icon.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.docbase.io/*"
+      ],
+      "js": [
+        "content.js"
+      ]
+    }
+  ],
+  "permissions": [
+    "storage",
+    "https://*.docbase.io/*"
+  ],
+  "icons" : {
+    "128": "icon.png"
+  }
+}

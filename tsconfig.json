@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "target": "es2017",
+    "module": "es2015",
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "declaration": false,
+    "strict": true,
+    "noImplicitAny": true,
+    "noImplicitThis": true,
+    "alwaysStrict": true,
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "baseUrl": ".",
+    "paths": {
+      "vue": [
+        "/node_modules/vue/types"
+      ],
+      "vue-class-component": [
+        "/node_modules/vue-class-component/lib"
+      ],
+      "vue-property-decorator": [
+        "/node_modules/vue-property-decorator/lib"
+      ]
+    }
+  }
+}
